@@ -1,0 +1,5 @@
+anthropic
+python-dotenv
+requests
+youtube-transcript-api
+yt-dlp

@@ -1,0 +1,26 @@
+[
+  {
+    "key": "service_health",
+    "label": "Service Health",
+    "weight": 0.3,
+    "prompt": "Score overall service health 0-100. Are all scheduled jobs reporting? Deduct 15 points per service silent >24h. Respond with JSON only: {\"score\": N, \"note\": \"one line\"}"
+  },
+  {
+    "key": "delivery_velocity",
+    "label": "Delivery Velocity",
+    "weight": 0.25,
+    "prompt": "Score delivery velocity 0-100: shipped work versus planned work this week. Respond with JSON only: {\"score\": N, \"note\": \"one line\"}"
+  },
+  {
+    "key": "market_intel",
+    "label": "Market Intel",
+    "weight": 0.25,
+    "prompt": "Score the quality and freshness of market intelligence available to the system 0-100. Respond with JSON only: {\"score\": N, \"note\": \"one line\"}"
+  },
+  {
+    "key": "knowledge_edge",
+    "label": "Knowledge Edge",
+    "weight": 0.2,
+    "prompt": "Score learning velocity 0-100: how much new, applicable knowledge entered the system this week? Respond with JSON only: {\"score\": N, \"note\": \"one line\"}"
+  }
+]

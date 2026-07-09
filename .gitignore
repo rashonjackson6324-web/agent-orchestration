@@ -1,0 +1,33 @@
+# secrets — never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# data & logs — may contain PII or account state
+*.db
+*.sqlite3
+logs/
+*.log
+*.csv
+!*.example.csv
+
+# os / editor
+.DS_Store
+.vscode/
+.idea/
+
+# private business configuration — never commit
+config/domains.json
+config/strategy_prompt.md
+config/client_brief_prompt.md
+config/stack_profile.md
+config/outreach_prompt.md
